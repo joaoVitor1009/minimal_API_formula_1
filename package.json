@@ -1,0 +1,25 @@
+{
+  "name": "setuprapido",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dist": "tsup src --format esm",
+    "start:dist": "npx tsx src/index.ts",
+    "start:watch": "npx tsx watch src/index.ts",
+    "start:dev": "npm run dist && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "tsx": "^4.23.12",
+    "typescript": "^7.0.2"
+  },
+  "dependencies": {
+    "@fastify/cors": "^11.3.0",
+    "fastify": "^5.12.1"
+  }
+}
